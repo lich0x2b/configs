@@ -1,0 +1,53 @@
+# Lich layouts [ ] [|] [|= [-] [+]
+definekey top M-F1 exec ratpoison -c "select -" -c "only" -c "next"
+definekey top M-F2 exec ratpoison -c "select -" -c "only" -c "hsplit" -c "next"
+definekey top M-F3 exec ratpoison -c "select -" -c "only" -c "hsplit" -c "next" -c "focusright" -c "next" -c "vsplit" -c "next"
+definekey top M-F4 exec ratpoison -c "select -" -c "only" -c "vsplit" -c "next"
+definekey top M-F5 exec ratpoison -c "select -" -c "only " -c "hsplit" -c next -c "vsplit" -c next -c "focusright" -c next -c "vsplit" -c "next"
+
+escape C-t
+msgwait 3
+rudeness 12
+set winname title
+set winfmt %n %s %t
+set fgcolor #cfdb6c
+set bgcolor #222222
+set font "Monospace-10"
+set winliststyle column
+set inputwidth 400
+set waitcursor 1
+set padding 0 14 0 0
+set fwcolor #cfdb6c
+set bwcolor #777777
+set barpadding 4 0 
+set wingravity nw
+set transgravity center
+set bargravity ne
+set border 0
+set barborder 4
+set inputwidth 500
+
+definekey top M-S-Return exec urxvt
+definekey top M-m exec $(dmenu_path | dmenu -nb "#222222" -nf "#eeeeee" -sb "#B89F63" -sf "#222222")
+bind k kill
+bind R remove
+bind u undo
+bind d dedicate
+bind L exec xscreensaver-command -lock
+bind b exec uzbl
+definekey top M-Tab focusprev
+definekey top M-C-Left exchangeleft
+definekey top M-C-Right exchangeright
+definekey top M-C-Up exchangeup
+definekey top M-C-Down exchangedown
+definekey top M-Left resize -10 0
+definekey top M-Right resize 10 0
+definekey top M-Up resize 0 10
+definekey top M-Down resize 0 -10
+definekey top M-d exec "ratinfo.sh"
+definekey top M-w windows
+bind o exec ratpoison -c "only" -c "set border 0"
+bind v exec ratpoison -c "hsplit" -c "set border 6"
+bind h exec ratpoison -c "vsplit" -c "set border 6"
+bind s swap
+bind n nextscreen

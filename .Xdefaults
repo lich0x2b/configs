@@ -1,0 +1,50 @@
+#include "/home/lich/.colorthemes/lich.theme"
+Xft.dpi:        96
+Xft.antialias:  true
+Xft.rgba:       rgb
+Xft.hinting:    true
+Xft.hintstyle:  hintslight
+
+Xcursor.theme:  Vanilla-DMZ
+Xcursor.size:  16
+
+XTerm*faceName: Monospace
+XTerm*faceSize: 10
+XTerm*background: #3f3f3f
+XTerm*foreground: #cdcdcd
+
+!URxvt.font: xft:Terminus-10,xft:Kochi Gothic-10
+!URxvt.boldFont: xft:Terminus-10,xft:Kochi Gothic-10
+!URxvt.font: xft:DejaVu Sans Mono-10,xft:Kochi Gothic-10:antialias=true
+!URxvt.boldFont: xft:DejaVu Sans Mono-10,xft:Kochi Gothic-10:antialias=true
+!URxvt.font: xft:DejaVu Sans Mono-10,xft:Sazanami Gothic
+!URxvt.boldFont: xft:DejaVu Sans Mono-10:bold,xft:Sazanami Gothic
+URxvt.font: xft:Monospace-10,xft:Sazanami Gothic
+URxvt.boldFont: xft:Monospace-10:bold,xft:Sazanami Gothic
+!URxvt.font: -*-proggysquare-medium-*-normal-*-11-*-*-*-*-*-*-*
+!URxvt.boldFont: -*-proggysquare-medium-*-normal-*-11-*-*-*-*-*-*-*
+!URxvt.font: -*-dina-medium-r-*-*-13-*-*-*-*-*-iso8859-1
+!URxvt.boldFont: -*-dina-medium-r-*-*-13-*-*-*-*-*-iso8859-1
+
+URxvt.perl-ext-common: matcher
+URxvt.urlLauncher: uzbl
+URxvt.matcher.button: 1
+URxvt.matcher.pattern.1: \\bwww\\.[\\w-]\\.[\\w./?&@#-]*[\\w/-]
+!URxvt.transparent: true
+!URxvt.shading: 0
+!URxvt.inheritPixmap: true
+URxvt.title: urxvt
+URxvt.scrollstyle: plain
+URxvt.cursorColor: #ffffff
+URxvt.depth:           24
+URxvt.scrollBar:        False
+URxvt.scrollBar_Right:  True
+URxvt.saveLines:        999
+URxvt.cursorBlink:     False
+URxvt.internalBorder: 0
+URxvt.externalBorder:   0
+URxvt*buffered:        true
+URxvt.urgentOnBell: true
+URxvt.background: #222222
+URxvt.foreground: #eeeeee
+URxvt.borderColor: #272727

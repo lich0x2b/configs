@@ -1,0 +1,46 @@
+escape ^aa 
+startup_message off
+msgwait 2
+defscrollback 5000
+defutf8 on
+shell bash 
+shelltitle "bash"
+activity "Activity in %t(%n)"
+vbell on
+vbell_msg "bell on %t (%n)"
+
+#backtick 100 1 1 $HOME/.screen-widgets/kernel
+#backtick 101 1 1 $HOME/.screen-widgets/frequency
+#backtick 102 1 1 $HOME/.screen-widgets/temperature
+#backtick 103 1 1 $HOME/.screen-widgets/volume
+#backtick 104 1 1 $HOME/.screen-widgets/time
+#backtick 105 1 1 $HOME/.screen-widgets/hostname
+backtick 1 1 1 info.sh
+#hardstatus alwayslastline "%{= kB} %1` %D %d/%m/%y %{W}%C %A %= %{= kW} %{kC} %-w%{= ky}%n %t%{= kC}%+w "
+#hardstatus alwayslastline "%{= kw}%{w}%-w%{= wk}%n %t%{= kw}%+w%=%{= kY}%1` :: %C %A"
+#caption always '%{= wW}%{= W}%1` %= %{= k}%?%-Lw%? %{W}%n*%f%t%?(%u)%?%{k}%?%+Lw%?%?%= %{= W}%C %A'
+#caption always '%{= B}[ %{= W}%101` :: %102` %{= B} ]%= %{= W}%?%-Lw%?%{R}( %{Y}%n*%f%t%?(%u)%?%{R} )%{W}%?%+Lw%?%?%= %{= B}[ %{= W}%104`%{= B} ]'
+#hardstatus alwayslastline '%{= Y}%1` %= %{= w}%-w%{+b r}%n*%t%{-b r}%{w}%+w %= %{M}%2` %{B}%C %A'
+#hardstatus alwayslastline '%{= wk} %{wk}%1` %= %-w%{wr}%n*%t%{wk}%+w %= %{wr}%2` %{wk}%C %A%{wk} '
+#hardstatus alwayslastline '%{= dG} %{dG}%1` %= %-w%{dW}%n*%t%{dG}%+w %= %{dW}%2` %{dG}%C %A%{dG} '
+#hardstatus alwayslastline '%{= dd} %{+b B}%1` %= %{+b w}%-w%{+b R}%n*%t%{+b w}%+w %= %{+b Y}%2` %{+b B}%C %A%{+b w} '
+#hardstatus alwayslastline '%{= wK} %= %{K}%-w%{k}%n*%t%{K}%+w %= '
+#hardstatus alwayslastline '%{= dd} %= %{w}%-w%{+b W}%n*%t%{-b w}%+w %= '
+
+#caption always '%{= dd}%{+b k}%-w%{+b w}%n*%t%{+b k}%+w %= %{+b w}%C %A%{+b w} '
+
+#hardstatus alwayslastline '%{= dd}%{+b M}%105` %{+b B}%100` %{+b Y}%101` %{+b R}%102` %{+b G}%103`%= %{+b W}%104`%{+b w}'
+#caption always '%{= dd}%{w}%-w%{+b Y}%n*%t%{-b w}%+w %='
+
+#hardstatus alwayslastline '%{= M} %101` %= %{= w}%-w%{+b r}%n*%t%{-b r}%{w}%+w %= %{c}%d %D %{B}%c '
+
+#hardstatus alwayslastline '%{= Kw} %-w%{= KW}%n*%t%{= Kw}%{w}%+w %= %{= KY}%101` %{= KR}%102` %{= KG}%103` %{= KW}%104` '
+
+hardstatus alwayslastline '%{= dd}%{= Wr} %D %d %M %c %1` %{= Wk}> %{= Ww}%-w%{= Wk}%n %t%{= Ww}%+w %{dd} %='
+#hardstatus alwayslastline '%{= dd}%{= Wr} %D %d %M %c %{= Wk}> %{= Ww}%-w%{= Wk}%n %t%{= Ww}%+w %{= dd} %=%{= Wr} %1` '
+
+#hardstatus alwayslastline '%{= dd}%{b}%-w%{B}%n*%t%{b}%+w %= %{W}Freq: %{G}%101` %{W}Temp: %{Y}%102` %{W}Vol: %{M}%103`'
+screen -t "TORRENT" 0 bash
+screen -t "IRC" 1 bash
+
+#idle 420 eval "screen cmatrix -f -o -u 10" "idle 0"

@@ -1,0 +1,8 @@
+background no
+out_to_console yes
+out_to_x no
+update_interval 1
+total_run_times 0
+
+TEXT
+^fg(\#B8DDEA)Arch:^fg() ^fg(\#FFE080)${fs_free /home}^fg() / ^fg(\#C4DF90)${fs_size /home}^fg() | ^fg(\#B8DDEA)${execi 600 simple_weather.py "EUR|RO|RO010|BUCHAREST"}^fg() | ^fg(\#959595)Temp:^fg() ^fg(\#CC896D)${acpitemp} C^fg() | ^fg(\#959595)Freq:^fg() ^fg(\#B8DDEA)${freq} Mhz^fg() | ^fg(\#959595)Load:^fg() ^fg(\#C4DF90)${cpu}%^fg() | ^fg(\#C18FCB)WiFi:^fg() ^fg(\#C4DF90)${downspeedf wlan0}^fg() / ^fg(\#CC896D)${upspeedf wlan0}^fg() | ^fg(\#FFFFFF)${time %I:%M}^fg() ^fg(\#959595)${time %p} ^fg()
