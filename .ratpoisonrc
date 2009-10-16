@@ -14,7 +14,6 @@ set fgcolor #cfdb6c
 set bgcolor #222222
 set font "Monospace-10"
 set winliststyle column
-set inputwidth 400
 set waitcursor 1
 set padding 0 14 0 0
 set fwcolor #cfdb6c
